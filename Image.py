@@ -26,3 +26,11 @@ bands = edges.split()
 
 outline = bands[0].point(lambda x: 255 if x<100 else 0)
 # outline.save("outline1.jpg")
+#edges = imgR.filter(ImageFilter.FIND_EDGES)
+edges = imgR.filter(ImageFilter.FIND_EDGES)
+
+edges.save("edge3.jpg")
+bands = edges.split()
+
+outline = bands[0].point(lambda x: 255 if x<100 else 0)
+# outline.save("outline1.jpg")
